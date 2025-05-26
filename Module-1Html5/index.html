@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local Community Event Portal</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="scripts/main.js"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+        <a href="help.html" target="_blank">Help</a>
+    </nav>
+
+    <!-- Main -->
+    <main id="home">
+        <div id="welcomeBanner">Welcome to the Local Event Portal</div>
+        <p>Today only: <span style="color: red; font-weight: bold;">Free registration for first 50 users!</span></p>
+        <p class="highlight">Stay updated with local events and services.</p>
+
+        <!-- Image Gallery -->
+        <section id="gallery">
+            <h2>Past Event Highlights</h2>
+            <table>
+                <caption>Community Celebrations</caption>
+                <tr>
+                    <td><img src="assets/images/placeholder.jpg" alt="Event 1" title="Event 1" class="gallery-img"></td>
+                    <td><img src="assets/images/placeholder.jpg" alt="Event 2" title="Event 2" class="gallery-img"></td>
+                    <td><img src="assets/images/placeholder.jpg" alt="Event 3" title="Event 3" class="gallery-img"></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Registration Form -->
+        <section id="events">
+            <h2>Register for an Event</h2>
+            <form id="registrationForm">
+                <input type="text" placeholder="Full Name" required autofocus><br>
+                <input type="email" placeholder="Email" required><br>
+                <input type="date" required><br>
+                <select id="eventType" onchange="saveEventPreference()">
+                    <option value="">Select Event Type</option>
+                    <option value="music">Music</option>
+                    <option value="tech">Tech</option>
+                    <option value="art">Art</option>
+                </select><br>
+                <textarea placeholder="Your message" onkeyup="countCharacters(this)"></textarea><br>
+                <output id="formOutput"></output><br>
+                <input type="submit" value="Submit" onclick="submitForm(event)">
+            </form>
+            <button onclick="clearPreferences()">Clear Preferences</button>
+        </section>
+
+        <!-- Video Section -->
+        <section>
+            <h2>Watch Our Promo</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dq8d5UM2q3U" frameborder="0" allowfullscreen></iframe>
+            <p id="videoStatus"></p>
+        </section>
+
+        <!-- Geolocation -->
+        <section>
+            <h2>Find Nearby Events</h2>
+            <button onclick="getLocation()">Find Nearby Events</button>
+            <p id="geoLocation"></p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Contact us at: community@localevents.org</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#welcomeBanner {
+    background-color: #cce5ff;
+    padding: 15px;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.highlight {
+    background: yellow;
+    font-weight: bold;
+}
+
+.gallery-img {
+    width: 150px;
+    border: 2px solid #333;
+}
+
+form input, form select, form textarea {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+}
