@@ -1,0 +1,120 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+#mainHeader {
+  background-color: #004d40;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Navigation styles */
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.nav-menu li a:hover {
+  background-color: #00796b;
+}
+
+/* Style for event cards */
+.eventCard {
+  border: 2px solid #ccc;
+  margin: 20px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Grouped selectors for consistent look */
+h3, p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+/* Typography enhancements */
+.news {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+  padding: 20px;
+}
+
+/* CTA Button example (if needed later) */
+/* .cta-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+} */
+
+/* Table styling */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #999;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+/* Form Highlight */
+.highlight {
+  outline: 2px solid blue;
+}
+
+/* Links styling */
+a:link {
+  color: white;
+}
+a:visited {
+  color: lightgray;
+}
+a:hover {
+  color: yellow;
+}
+a:active {
+  color: orange;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  .eventCard {
+    margin: 10px;
+    padding: 10px;
+  }
+}
