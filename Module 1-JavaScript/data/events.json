@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Live Music Night",
+    "date": "2025-06-15T18:00:00",
+    "seats": 25,
+    "category": "Music",
+    "location": "Community Hall A"
+  },
+  {
+    "id": 2,
+    "name": "Tech Talk: Future of AI",
+    "date": "2025-06-20T14:00:00",
+    "seats": 50,
+    "category": "Tech",
+    "location": "Auditorium B"
+  },
+  {
+    "id": 3,
+    "name": "Cooking Workshop: South Indian Flavors",
+    "date": "2025-06-18T10:00:00",
+    "seats": 20,
+    "category": "Cooking",
+    "location": "Kitchen Studio C"
+  },
+  {
+    "id": 4,
+    "name": "Youth Coding Bootcamp",
+    "date": "2025-06-12T09:00:00",
+    "seats": 30,
+    "category": "Tech",
+    "location": "Lab D"
+  },
+  {
+    "id": 5,
+    "name": "Carnatic Music Appreciation",
+    "date": "2025-06-25T17:00:00",
+    "seats": 40,
+    "category": "Music",
+    "location": "Music Room E"
+  }
+]

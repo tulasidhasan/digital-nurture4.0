@@ -1,0 +1,30 @@
+<head>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <input id="searchInput" placeholder="Search by event name" />
+  <select id="categoryFilter">
+    <option value="Music">Music</option>
+    <option value="Tech">Tech</option>
+    <option value="Workshop">Workshop</option>
+  </select>
+  <div id="eventList"></div>
+  <div id="loading" style="display:none;">Loading...</div>
+
+  <form id="regForm">
+    <input name="name" placeholder="Name" />
+    <input name="email" placeholder="Email" />
+    <select name="eventSelect">
+      <option value="Music Fest">Music Fest</option>
+      <option value="Tech Talk">Tech Talk</option>
+    </select>
+    <button id="registerBtn" type="submit">Submit</button>
+    <p id="formError" style="color:red;"></p>
+  </form>
+
+  <script type="module" src="./js/main.js"></script>
+  <!-- In your index.html -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+</body>
